@@ -3,3 +3,12 @@
 eval "$(ssh-agent -s)" 
 После этого добавить меня туда: 
 ssh-add .psan3333
+И затем: ssh -T git@github.com
+
+Как пушить изменения:
+Отслеживаем измениня:
+git add .
+Коммит:
+git commit -m "сообщение"
+Залив на гит:
+git push origin train
