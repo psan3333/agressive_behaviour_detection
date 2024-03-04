@@ -13,22 +13,22 @@
 
 <h2>Состав команды:</h2>
 Артём Летягин - Куратор<br>
-![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/31bc4963-a6c8-44e0-ad3e-9d8bb35daad2)
+![Артём](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/c76128f5-778c-4549-affc-a41288d790e9)
 
 Марк Скворцов - ML Engineer<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/e9bce13a-12ff-46fe-bf78-0219dffdaaf0)
 
-Алина Вдовиченко<br>
+Алина Вдовиченко - ML Engineer<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/5396fff3-06dc-42cb-8cdf-1a330007ceda)
 
-Алина Тен<br>
+Алина Тен - Python разработчик<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/8450f77e-ca78-4249-8252-88e77d8b02c1)
 
-Василий Постных<br>
+Василий Постных - Технический писатель<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/84ba6312-b5fe-4f24-a8c5-e5bf55309a3d)
 
-Максим Милешкин<br>
+Максим Милешкин - MLOps<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/33452558-48c7-4fed-a1a4-cfb32d637f83)
 
-Алексей Царёв<br>
+Алексей Царёв - ML Engineer / MLOps<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/db7cef70-e096-47da-bcf5-d6aa70f950cb)
