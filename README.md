@@ -10,3 +10,10 @@
 &emsp;3. Получаем одномерную картинку.<br>
 &emsp;4. Накладываем кадры.<br>
 &emsp;5. Затем свертки + fc-слои для классификации поведения
+
+Состав команды:
+Артём - куратор
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/0bcad20d-4836-429b-89d0-c554bb3df3c6)
+
+Марк - ML Engineer
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/69679dd6-cfe6-4461-8a07-776fb07a99b9)
