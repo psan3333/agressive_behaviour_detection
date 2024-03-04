@@ -13,7 +13,7 @@
 
 <h2>Состав команды:</h2>
 Артём Летягин - Куратор<br>
-![Артём](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/8a36629a-0e6a-4cb5-a47a-020d6cbda49e)
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/8a36629a-0e6a-4cb5-a47a-020d6cbda49e)
 
 Марк Скворцов - ML Engineer<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/e9bce13a-12ff-46fe-bf78-0219dffdaaf0)
