@@ -12,8 +12,23 @@
 &emsp;5. Затем свертки + fc-слои для классификации поведения<br>
 
 <h2>Состав команды:</h2>
-&emsp;Артём - Куратор<br>
-![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/0bcad20d-4836-429b-89d0-c554bb3df3c6)
+Артём Летягин - Куратор<br>
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/477e3ebc-605e-4168-a02f-9985862f78b4)
 
-&emsp;Марк - ML Engineer<br>
-![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/69679dd6-cfe6-4461-8a07-776fb07a99b9)
+Марк Скворцов - ML Engineer<br>
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/e9bce13a-12ff-46fe-bf78-0219dffdaaf0)
+
+Алина Вдовиченко
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/5396fff3-06dc-42cb-8cdf-1a330007ceda)
+
+Алина Тен
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/8450f77e-ca78-4249-8252-88e77d8b02c1)
+
+Василий Постных
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/84ba6312-b5fe-4f24-a8c5-e5bf55309a3d)
+
+Максим Милешкин
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/33452558-48c7-4fed-a1a4-cfb32d637f83)
+
+Алексей Царёв
+![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/db7cef70-e096-47da-bcf5-d6aa70f950cb)
