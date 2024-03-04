@@ -12,8 +12,8 @@
 &emsp;5. Затем свертки + fc-слои для классификации поведения<br>
 
 <h2>Состав команды:</h2>
-Артём - куратор
+&emsp;Артём - Куратор<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/0bcad20d-4836-429b-89d0-c554bb3df3c6)
 
-Марк - ML Engineer
+&emsp;Марк - ML Engineer<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/69679dd6-cfe6-4461-8a07-776fb07a99b9)
