@@ -24,7 +24,8 @@
 Алина Тен - Python разработчик<br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/8450f77e-ca78-4249-8252-88e77d8b02c1)
 
-Василий Постных - Технический писатель https://github.com/V4SYA <br>
+Василий Постных - Технический писатель
+https://github.com/V4SYA <br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/84ba6312-b5fe-4f24-a8c5-e5bf55309a3d)
 
 Максим Милешкин - MLOps<br>
