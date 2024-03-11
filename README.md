@@ -15,8 +15,6 @@
 Артём Летягин - Куратор<br>
 ![Артём](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/c76128f5-778c-4549-affc-a41288d790e9)
 
-<br>
-
 Марк Скворцов - ML Engineer<br>
 https://github.com/markusLons <br>
 ![image](https://github.com/psan3333/agressive_behaviour_detection/assets/62791870/e9bce13a-12ff-46fe-bf78-0219dffdaaf0)
