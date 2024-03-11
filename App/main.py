@@ -9,7 +9,6 @@ from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtGui import QImage, QPixmap
 
 
-
 class VideoTrimmingWindow(QWidget):
     def __init__(self, video_path, folder_path):
         super().__init__()
@@ -92,7 +91,6 @@ class VideoTrimmingWindow(QWidget):
             self.frame_index += 1
             self.displayFrame()
 
-
     def trimVideo(self):
         start_index = int(self.editStartIndex.text())
         end_index = int(self.editEndIndex.text())
@@ -118,7 +116,7 @@ class VideoTrimmingWindow(QWidget):
 
         video_capture.release()
         trimmed_video_writer.release()
-
+        self.video_capture.release()
         QMessageBox.information(self, "Information", "Video trimmed successfully.")
 
         self.close()
@@ -178,7 +176,7 @@ class VideoPlayer(QWidget):
         self.videoFiles = []
         self.currentVideoIndex = 0
         self.folderSelected = False
-
+        self.trimming_window = VideoTrimmingWindow('', '')
 
     def openFolder(self):
         if not self.folderSelected:
@@ -198,14 +196,17 @@ class VideoPlayer(QWidget):
 
     def moveVideoToDeleteFolder(self):
         if self.folderSelected and self.currentVideoIndex < len(self.videoFiles):
+            self.trimming_window.close()
             src_file = self.videoFiles[self.currentVideoIndex]
             dst_folder = os.path.join(os.path.dirname(src_file), "delete")
             if not os.path.exists(dst_folder):
                 os.makedirs(dst_folder)
             dst_file = os.path.join(dst_folder, os.path.basename(src_file))
-            os.replace(src_file, dst_file)
+            os.remove(src_file)
+            #os.rename(src_file, dst_file)
             self.videoFiles.pop(self.currentVideoIndex)
             self.nextVideo()
+
 
     def playVideo(self):
         if not self.folderSelected:
@@ -269,14 +270,7 @@ class VideoPlayer(QWidget):
             self.videoFiles.pop(self.currentVideoIndex)
             self.nextVideo()
 
-    def deleteVideo(self):
-        if self.folderSelected and self.currentVideoIndex < len(self.videoFiles):
-            src_file = self.videoFiles[self.currentVideoIndex]
-            if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-                self.mediaPlayer.stop()
-            os.remove(src_file)
-            self.videoFiles.pop(self.currentVideoIndex)
-            self.nextVideo()
+
 
     def openVideoTrimmingWindow(self):
         if self.folderSelected and self.currentVideoIndex < len(self.videoFiles):
