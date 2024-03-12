@@ -293,7 +293,7 @@ class VideoPlayer(QWidget):
                 loop = QEventLoop()
                 self.trimming_window.destroyed.connect(loop.quit)
                 loop.exec()
-            self.moveToViolenceFolder()
+            self.moveVideoToViolenceFolder()
 
 
 
