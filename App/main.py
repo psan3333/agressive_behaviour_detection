@@ -1,3 +1,4 @@
+import csv
 import sys
 import os
 import cv2
@@ -110,6 +111,18 @@ class VideoTrimmingWindow(QWidget):
         end_time_ms = end_index * 1000 / fps
 
         video_capture = cv2.VideoCapture(self.video_path)
+
+        csv_filename = 'file_with_time.csv'
+
+        video_filename = os.path.basename(self.video_path)
+        file_exists = os.path.isfile(csv_filename)
+
+        with open(csv_filename, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            if not file_exists:
+                writer.writerow(['videopath', 'start_index', 'end_index'])
+
+            writer.writerow([video_filename, start_index, end_index])
 
         fourcc = cv2.VideoWriter_fourcc(*'mp4v')
         trimmed_video_path = os.path.join(self.folder_path, "violence", os.path.basename(self.video_path))
