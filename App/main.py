@@ -3,7 +3,7 @@ import os
 import cv2
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel, QLineEdit, QHBoxLayout, \
     QMessageBox, QFileDialog, QSlider
-from PyQt5.QtCore import Qt, QUrl
+from PyQt5.QtCore import Qt, QUrl, QEventLoop
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtGui import QImage, QPixmap
@@ -290,8 +290,10 @@ class VideoPlayer(QWidget):
                 video_path = self.videoFiles[self.currentVideoIndex]
                 self.trimming_window = VideoTrimmingWindow(video_path, os.path.dirname(video_path))
                 self.trimming_window.show()
-            else:
-                self.moveVideoToViolenceFolder()
+                loop = QEventLoop()
+                self.trimming_window.destroyed.connect(loop.quit)
+                loop.exec()
+            self.moveToViolenceFolder()
 
 
 
