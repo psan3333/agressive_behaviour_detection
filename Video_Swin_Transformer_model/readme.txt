@@ -1,1 +1,1 @@
-Video Swin Transformer model
+Video Swin Transformer model used by Tsarev Alexey
