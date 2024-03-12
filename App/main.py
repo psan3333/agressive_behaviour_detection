@@ -61,6 +61,9 @@ class VideoTrimmingWindow(QWidget):
 
         self.displayFrame()
 
+    def closeEvent(self, event):
+        self.video_capture.release()
+        event.accept()
     def sliderValueChanged(self, value):
         self.frame_index = value
         self.displayFrame()
@@ -92,8 +95,14 @@ class VideoTrimmingWindow(QWidget):
             self.displayFrame()
 
     def trimVideo(self):
-        start_index = int(self.editStartIndex.text())
-        end_index = int(self.editEndIndex.text())
+        if not self.editStartIndex.text().isdigit():
+            start_index = 0
+        else:
+            start_index = int(self.editStartIndex.text())
+        if not self.editEndIndex.text().isdigit():
+            end_index = self.total_frames
+        else:
+            end_index = int(self.editEndIndex.text())
 
         fps = self.getFPS()
 
@@ -207,7 +216,6 @@ class VideoPlayer(QWidget):
             self.videoFiles.pop(self.currentVideoIndex)
             self.nextVideo()
 
-
     def playVideo(self):
         if not self.folderSelected:
             QMessageBox.warning(self, "Warning", "Please select a folder containing video files first.")
@@ -269,8 +277,6 @@ class VideoPlayer(QWidget):
             os.rename(src_file, dst_file)
             self.videoFiles.pop(self.currentVideoIndex)
             self.nextVideo()
-
-
 
     def openVideoTrimmingWindow(self):
         if self.folderSelected and self.currentVideoIndex < len(self.videoFiles):
