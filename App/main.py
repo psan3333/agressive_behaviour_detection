@@ -10,8 +10,6 @@ from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtGui import QImage, QPixmap
 
-# TODO: 1. Сделать покадровый просмотр. 2. Сделать обрезку любого видоса. 3. Сделать многократную обрезку видоса. 4. Сделать оторажение длительности видоса.
-
 current_video_usage = 0
 
 class VideoTrimmingWindow(QWidget):
