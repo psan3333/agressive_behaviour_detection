@@ -249,6 +249,7 @@ class VideoPlayer(QWidget):
         elif event.key() == Qt.Key_Right:
             self.nextVideo()
         elif event.key() == Qt.Key_Q and event.modifiers() & Qt.ControlModifier:
+            self.folderSelected = False
             self.close()
 
     def nextVideo(self):
@@ -298,6 +299,11 @@ class VideoPlayer(QWidget):
             msg_box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
             msg_box.setDefaultButton(QMessageBox.Yes)
             response = msg_box.exec_()
+            
+            src_file = self.videoFiles[self.currentVideoIndex]
+            dst_folder = os.path.join(os.path.dirname(src_file), "violence")
+            if not os.path.exists(dst_folder):
+                os.makedirs(dst_folder)
 
             if response == QMessageBox.Yes:
                 video_path = self.videoFiles[self.currentVideoIndex]
